@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-control {
+    @apply py-1.5 px-3 rounded-md outline-none border border-secondary hover:ring focus:ring focus:border;
+  }
+
+  .btn {
+    @apply mt-4 bg-secondary py-2.5 text-white rounded-md md:w-max md:mx-auto md:px-20 shadow-lg hover:bg-gray-900;
+  }
+}

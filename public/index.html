@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body>
+    <header x-data="{ open: false }" class="bg-secondary sticky top-0 z-10">
+      <div class="h-20 flex justify-between items-center px-4">
+        <div>
+          <img class="w-44 md:w-52" src="./images/logo.svg" alt="" />
+        </div>
+  
+        <div class="relative -top-1 text-white text-4xl cursor-pointer" @click="open = true">&equiv;</div>
+      </div>
+
+      <nav x-show="open" @click.away="open = false" class="w-11/12 max-w-7xl mx-auto">
+        <div class="mb-5">
+          <input type="search" placeholder="Search" class="form-control w-full border-2 py-2 hover:border-primary focus:border-primary focus:border-2 ring-transparent">
+        </div>
+
+        <div class="flex flex-col gap-2 pb-7 md:flex-row md:items-center md:justify-around">
+          <div class="flex gap-2 text-gray-100">
+            <p>Price:</p>
+            <span>$</span>
+            <span class="text-primary">$$</span>
+            <span>$$$</span>
+            <span>$$$$</span>
+          </div>
+  
+          <div class="flex text-gray-100">
+            <p class="mr-2">Qualification:</p>
+            <span class="text-primary">&starf;</span>
+            <span class="text-primary">&starf;</span>
+            <span class="text-primary">&starf;</span>
+            <span class="text-primary">&starf;</span>
+            <span>&star;</span>
+          </div>
+  
+          <button class="py-2 md:w-1/6 rounded-md bg-primary text-secondary shadow-lg font-semibold hover:bg-yellow-500 hover:text-gray-200">Search</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-gray-400 pb-10">
+      <div
+        class="h-52 md:h-96 bg-no-repeat bg-center bg-cover"
+        style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')"
+      ></div>
+
+      <div class="w-11/12 max-w-7xl mx-auto md:flex md:flex-wrap items-center gap-4">
+        <div class="max-w-lg mx-auto md:w-5/12 md:flex md:rounded-lg md:bg-white mt-10">
+          <div>
+            <img
+              class="w-full rounded-lg md:h-full object-cover object-left md:rounded-r-none"
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500&q=80"
+              alt=""
+            />
+          </div>
+    
+          <div class="relative rounded-lg bg-white shadow-lg md:flex md:flex-col md:justify-center md:shadow-none mx-2 -mt-4 md:mt-0 p-2">
+            <h2 class="font-bold uppercase text-2xl text-gray-900 md:text-xl md:leading-tight md:mb-2">Cheese Hamburger</h2>
+            <p class="text-gray-600 font-medium leading-tight">
+              Cheese Hamburger with meat, tomatoes and a lot of delicious cheese.
+            </p>
+            <div class="my-2 font-bold text-gray-600">3.99 USD$</div>
+            <div class="text-yellow-700 text-sm">
+              &starf; &starf; &starf; &starf; &star; | 47 reviews
+            </div>
+          </div>
+        </div>
+  
+        <div class="max-w-lg mx-auto md:w-5/12 md:flex md:rounded-lg md:bg-white mt-10">
+          <div>
+            <img
+              class="w-full rounded-lg md:h-full object-cover object-left md:rounded-r-none"
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500&q=80"
+              alt=""
+            />
+          </div>
+    
+          <div class="relative rounded-lg bg-white shadow-lg md:flex md:flex-col md:justify-center md:shadow-none mx-2 -mt-4 md:mt-0 p-2">
+            <h2 class="font-bold uppercase text-2xl text-gray-900 md:text-xl md:leading-tight md:mb-2">Cheese Hamburger</h2>
+            <p class="text-gray-600 font-medium leading-tight">
+              Cheese Hamburger with meat, tomatoes and a lot of delicious cheese.
+            </p>
+            <div class="my-2 font-bold text-gray-600">3.99 USD$</div>
+            <div class="text-yellow-700 text-sm">
+              &starf; &starf; &starf; &starf; &star; | 47 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto md:w-5/12 md:flex md:rounded-lg md:bg-white mt-10">
+          <div>
+            <img
+              class="w-full rounded-lg md:h-full object-cover object-left md:rounded-r-none"
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500&q=80"
+              alt=""
+            />
+          </div>
+    
+          <div class="relative rounded-lg bg-white shadow-lg md:flex md:flex-col md:justify-center md:shadow-none mx-2 -mt-4 md:mt-0 p-2">
+            <h2 class="font-bold uppercase text-2xl text-gray-900 md:text-xl md:leading-tight md:mb-2">Cheese Hamburger</h2>
+            <p class="text-gray-600 font-medium leading-tight">
+              Cheese Hamburger with meat, tomatoes and a lot of delicious cheese.
+            </p>
+            <div class="my-2 font-bold text-gray-600">3.99 USD$</div>
+            <div class="text-yellow-700 text-sm">
+              &starf; &starf; &starf; &starf; &star; | 47 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto md:w-5/12 md:flex md:rounded-lg md:bg-white mt-10">
+          <div>
+            <img
+              class="w-full rounded-lg md:h-full object-cover object-left md:rounded-r-none"
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500&q=80"
+              alt=""
+            />
+          </div>
+    
+          <div class="relative rounded-lg bg-white shadow-lg md:flex md:flex-col md:justify-center md:shadow-none mx-2 -mt-4 md:mt-0 p-2">
+            <h2 class="font-bold uppercase text-2xl text-gray-900 md:text-xl md:leading-tight md:mb-2">Cheese Hamburger</h2>
+            <p class="text-gray-600 font-medium leading-tight">
+              Cheese Hamburger with meat, tomatoes and a lot of delicious cheese.
+            </p>
+            <div class="my-2 font-bold text-gray-600">3.99 USD$</div>
+            <div class="text-yellow-700 text-sm">
+              &starf; &starf; &starf; &starf; &star; | 47 reviews
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="w-11/12 max-w-xl h-auto mx-auto mt-20 mb-10 flex flex-col gap-2 bg-white p-5 rounded-lg">
+        <p class="text-secondary font-bold text-center text-2xl">Contact Us</p>
+        <label for="name" class="text-secondary font-semibold">Name:</label>
+        <input type="text" name="name" id="name" class="form-control ">
+
+        <label for="email" class="text-secondary font-semibold">Email:</label>
+        <input type="email" name="email" id="email" class="form-control">
+
+        <label for="textarea" class="text-secondary font-semibold">Comments:</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="5" class="form-control"></textarea>
+
+        <button class="btn">Submit</button>
+      </form>
+    </main>
+
+    <footer class=" bg-secondary">
+      <div class="py-4 text-center text-white md:flex md:flex-row-reverse md:justify-around md:text-left">
+        <div class="mb-4">
+          <div class="mb-1 hover:text-blue-500 cursor-pointer">
+            <i class="fa-brands fa-facebook-f mr-1"></i>Facebook
+          </div>
+          
+          <div class="mb-1 hover:text-blue-400 cursor-pointer">
+            <i class="fa-brands fa-twitter mr-1"></i>Twitter
+          </div>
+
+          <div class="mb-1 hover:text-orange-400 cursor-pointer">
+            <i class="fa-brands fa-instagram mr-1"></i>Instagram
+          </div>
+        </div>
+
+        <ul class="md:list-disc">
+          <li>Support</li>
+          <li>About Us</li>
+          <li>Register</li>
+          <li>Privacy Notice</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
